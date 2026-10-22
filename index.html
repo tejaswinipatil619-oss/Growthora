@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Growthora | Digital Marketing That Drives Growth</title>
+  <meta name="description" content="Discover smarter digital marketing strategies with Growthora. Explore SEO, paid advertising, content marketing and more. Request your free marketing strategy.">
+  <meta name="theme-color" content="#ffffff">
+
+  <meta property="og:title" content="Growthora | Your Next Stage of Growth Starts Here">
+  <meta property="og:description" content="Explore strategic digital marketing solutions designed around your business goals.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+
+      <a href="#home" class="logo" aria-label="Growthora home">
+        <span class="logo-mark">G</span>
+        <span>growthora<span class="logo-dot">.</span></span>
+      </a>
+
+      <button class="menu-toggle"
+              aria-label="Open navigation menu"
+              aria-expanded="false"
+              aria-controls="nav-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-menu" id="nav-menu">
+        <a href="#services">Services</a>
+        <a href="#about">Why Growthora</a>
+        <a href="#work">Our Work</a>
+        <a href="#process">Our Process</a>
+        <a href="#faq">FAQs</a>
+
+        <a href="#lead-form" class="button button-primary nav-cta">
+          Get Free Strategy <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+
+    </nav>
+  </header>
+
+
+  <main>
+
+    <!-- HERO SECTION -->
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+
+        <div class="hero-content">
+
+          <div class="eyebrow">
+            <span class="status-dot"></span>
+            DIGITAL MARKETING, BUILT AROUND YOU
+          </div>
+
+          <h1>
+            Your Next Stage of
+            <span class="text-blue">Growth</span>
+            Starts Here.
+          </h1>
+
+          <p class="hero-description">
+            Strategic digital marketing that connects your business
+            with the right people and drives meaningful results.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#lead-form" class="button button-primary">
+              Get Your Free Marketing Strategy
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
+
+          <div class="hero-benefits">
+            <div class="benefit">
+              <span class="check-icon" aria-hidden="true">✓</span>
+              Strategies tailored to your goals
+            </div>
+
+            <div class="benefit">
+              <span class="check-icon" aria-hidden="true">✓</span>
+              Transparent communication
+            </div>
+
+            <div class="benefit">
+              <span class="check-icon" aria-hidden="true">✓</span>
+              Data-informed decisions
+            </div>
+          </div>
+
+          <div class="hero-note">
+            <span class="note-icon" aria-hidden="true">✳</span>
+            Every business is different. Your marketing should be too.
+          </div>
+
+        </div>
+
+
+        <!-- LEAD GENERATION FORM -->
+        <div class="form-card" id="lead-form">
+
+          <div class="form-heading">
+            <span class="form-label">LET'S TALK GROWTH</span>
+
+            <h2>Get Your Free Marketing Strategy</h2>
+
+            <p>
+              Tell us a little about your business.
+              We'll explore the right opportunities for you.
+            </p>
+          </div>
+
+          <form id="lead-generation-form" novalidate>
+
+            <div class="form-row">
+
+              <div class="form-group">
+                <label for="full-name">Full name <span>*</span></label>
+                <input
+                  type="text"
+                  id="full-name"
+                  name="fullName"
+                  placeholder="Jane Smith"
+                  autocomplete="name"
+                  minlength="2"
+                  maxlength="100"
+                  required
+                >
+                <small class="field-error" id="name-error"></small>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Work email <span>*</span></label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="jane@company.com"
+                  autocomplete="email"
+                  maxlength="254"
+                  required
+                >
+                <small class="field-error" id="email-error"></small>
+              </div>
+
+            </div>
+
+
+            <div class="form-group">
+              <label for="company">Company name <span>*</span></label>
+              <input
+                type="text"
+                id="company"
+                name="company"
+                placeholder="Your company"
+                autocomplete="organization"
+                maxlength="150"
+                required
+              >
+              <small class="field-error" id="company-error"></small>
+            </div>
+
+
+            <div class="form-group">
+              <label for="website">
+                Website URL <span class="optional">(Optional)</span>
+              </label>
+
+              <input
+                type="url"
+                id="website"
+                name="website"
+                placeholder="https://yourwebsite.com"
+                autocomplete="url"
+                maxlength="2048"
+              >
+
+              <small class="field-error" id="website-error"></small>
+            </div>
+
+
+            <div class="form-group">
+              <label for="service">What do you need help with? <span>*</span></label>
+
+              <select id="service" name="service" required>
+                <option value="">Choose a service</option>
+                <option value="SEO">Search Engine Optimization (SEO)</option>
+                <option value="Paid Advertising">Paid Advertising</option>
+                <option value="Social Media Marketing">Social Media Marketing</option>
+                <option value="Email Marketing">Email Marketing</option>
+                <option value="Content Marketing">Content Marketing</option>
+                <option value="Conversion Optimization">Conversion Rate Optimization</option>
+                <option value="Marketing Automation">Marketing Automation</option>
+                <option value="Analytics">Analytics & Reporting</option>
+                <option value="Multiple Services">Multiple Services</option>
+                <option value="Not Sure">Not Sure Yet</option>
+              </select>
+
+              <small class="field-error" id="service-error"></small>
+            </div>
+
+
+            <div class="form-group consent-group">
+              <input
+                type="checkbox"
+                id="privacy-consent"
+                name="privacyConsent"
+                required
+              >
+
+              <label for="privacy-consent">
+                I agree to the <a href="#privacy">Privacy Policy</a>
+                and consent to being contacted about my enquiry.
+              </label>
+            </div>
+
+            <small class="field-error" id="consent-error"></small>
+
+
+            <!-- Honeypot field for server-side spam protection -->
+            <div class="honeypot" aria-hidden="true">
+              <label for="company-website">Leave this field empty</label>
+              <input
+                type="text"
+                id="company-website"
+                name="companyWebsite"
+                tabindex="-1"
+                autocomplete="off"
+              >
+            </div>
+
+
+            <button type="submit" class="button button-primary form-submit">
+              Get My Free Marketing Strategy
+              <span aria-hidden="true">→</span>
+            </button>
+
+            <div
+              class="form-message"
+              id="form-message"
+              role="status"
+              aria-live="polite"
+            ></div>
+
+            <p class="form-disclaimer">
+              No obligation. Your information should be handled securely.
+            </p>
+
+          </form>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- TRUST / POSITIONING STRIP -->
+    <section class="trust-strip">
+      <div class="container trust-inner">
+        <p>ONE PARTNER FOR YOUR DIGITAL GROWTH</p>
+
+        <div class="trust-items">
+          <span>Strategy</span>
+          <span aria-hidden="true">✳</span>
+          <span>Creativity</span>
+          <span aria-hidden="true">✳</span>
+          <span>Performance</span>
+          <span aria-hidden="true">✳</span>
+          <span>Optimization</span>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- SERVICES SECTION -->
+    <section class="section services-section" id="services">
+
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="eyebrow">WHAT WE DO</span>
+
+          <h2>
+            Everything You Need to
+            <span class="text-blue">Grow Smarter.</span>
+          </h2>
+
+          <p>
+            A connected approach to digital marketing that helps your
+            business reach the right audience and make better decisions.
+          </p>
+        </div>
+
+
+        <div class="services-grid">
+
+          <article class="service-card">
+            <div class="service-icon icon-blue" aria-hidden="true">⌕</div>
+            <span class="service-number">01</span>
+            <h3>Search Engine Optimization</h3>
+            <p>
+              Improve search visibility and help potential customers
+              discover your business organically.
+            </p>
+            <a href="#lead-form" class="text-link">
+              Explore SEO <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+
+          <article class="service-card">
+            <div class="service-icon icon-purple" aria-hidden="true">↗</div>
+            <span class="service-number">02</span>
+            <h3>Paid Advertising</h3>
+            <p>
+              Reach relevant audiences with thoughtfully planned
+              advertising campaigns.
+            </p>
+            <a href="#lead-form" class="text-link">
+              Explore Advertising <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+
+          <article class="service-card">
+            <div class="service-icon icon-orange" aria-hidden="true">◎</div>
+            <span class="service-number">03</span>
+            <h3>Social Media Marketing</h3>
+            <p>
+              Build a consistent brand presence and connect with
+              the people who matter to your business.
+            </p>
+            <a href="#lead-form" class="text-link">
+              Explore Social Media <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+
+          <article class="service-card">
+            <div class="service-icon icon-green" aria-hidden="true">✉</div>
+            <span class="service-number">04</span>
+            <h3>Email Marketing</h3>
+            <p>
+              Create relevant email campaigns that nurture relationships
+              and encourage meaningful action.
+            </p>
+            <a href="#lead-form" class="text-link">
+              Explore Email Marketing <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+
+          <article class="service-card">
+            <div class="service-icon icon-orange" aria-hidden="true">✎</div>
+            <span class="service-number">05</span>
+            <h3>Content Marketing</h3>
+            <p>
+              Share useful content that answers audience questions
+              and communicates your brand's value.
+            </p>
+            <a href="#lead-form" class="text-link">
+              Explore Content <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+
+          <article class="service-card">
+            <div class="service-icon icon-blue" aria-hidden="true">⌁</div>
+            <span class="service-number">06</span>
+            <h3>Conversion Optimization</h3>
+            <p>
+              Identify opportunities to improve landing pages
+              and make customer journeys easier.
+            </p>
+            <a href="#lead-form" class="text-link">
+              Explore CRO <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+
+          <article class="service-card">
+            <div class="service-icon icon-purple" aria-hidden="true">⚙</div>
+            <span class="service-number">07</span>
+            <h3>Marketing Automation</h3>
+            <p>
+              Streamline repetitive marketing tasks and create
+              more consistent customer follow-ups.
+            </p>
+            <a href="#lead-form" class="text-link">
+              Explore Automation <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+
+          <article class="service-card">
+            <div class="service-icon icon-green" aria-hidden="true">▥</div>
+            <span class="service-number">08</span>
+            <h3>Analytics & Reporting</h3>
+            <p>
+              Understand campaign performance through meaningful
+              metrics and actionable insights.
+            </p>
+            <a href="#lead-form" class="text-link">
+              Explore Analytics <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- WHY CHOOSE US -->
+    <section class="section about-section" id="about">
+
+      <div class="container about-grid">
+
+        <div class="about-content">
+          <span class="eyebrow">THE GROWTHORA APPROACH</span>
+
+          <h2>
+            Better Marketing Starts With
+            <span class="text-blue">Better Thinking.</span>
+          </h2>
+
+          <p>
+            Effective marketing isn't about doing everything at once.
+            It's about understanding your goals, choosing the right
+            opportunities and learning from the results.
+          </p>
+
+          <a href="#process" class="button button-dark">
+            Discover Our Process <span aria-hidden="true">→</span>
+          </a>
+        </div>
+
+
+        <div class="approach-list">
+
+          <article class="approach-item">
+            <span class="approach-icon" aria-hidden="true">01</span>
+            <div>
+              <h3>Data-Informed Strategies</h3>
+              <p>
+                Use relevant research and performance data
+                to guide marketing decisions.
+              </p>
+            </div>
+          </article>
+
+
+          <article class="approach-item">
+            <span class="approach-icon" aria-hidden="true">02</span>
+            <div>
+              <h3>Transparent Reporting</h3>
+              <p>
+                Make objectives, measurements and progress
+                easier to understand.
+              </p>
+            </div>
+          </article>
+
+
+          <article class="approach-item">
+            <span class="approach-icon" aria-hidden="true">03</span>
+            <div>
+              <h3>Customized Marketing Plans</h3>
+              <p>
+                Prioritize solutions according to your business
+                goals, audience and available resources.
+              </p>
+            </div>
+          </article>
+
+
+          <article class="approach-item">
+            <span class="approach-icon" aria-hidden="true">04</span>
+            <div>
+              <h3>Clear Communication</h3>
+              <p>
+                Keep priorities, next steps and recommendations
+                clear throughout the process.
+              </p>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- SAMPLE WORK / CASE STUDIES -->
+    <section class="section work-section" id="work">
+
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="eyebrow">SELECTED WORK</span>
+
+          <h2>
+            Ideas Into
+            <span class="text-blue">Action.</span>
+          </h2>
+
+          <p>
+            Explore illustrative projects showing how digital marketing
+            strategies can be planned and presented.
+          </p>
+
+          <span class="sample-disclaimer">
+            Portfolio concept projects · Illustrative examples, not client results
+          </span>
+        </div>
+
+
+        <div class="work-grid">
+
+          <article class="work-card">
+
+            <div class="work-visual work-visual-one">
+              <div class="mini-browser">
+                <div class="browser-dots">
+                  <i></i><i></i><i></i>
+                </div>
+
+                <div class="mini-content">
+                  <span class="mini-label">CONCEPT PROJECT 01</span>
+                  <div class="mini-line mini-line-short"></div>
+                  <div class="mini-line mini-line-long"></div>
+                  <div class="mini-chart">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="work-card-content">
+              <div class="work-tags">
+                <span>SEO</span>
+                <span>Content Strategy</span>
+              </div>
+
+              <h3>Organic Visibility Blueprint</h3>
+
+              <p>
+                An illustrative SEO strategy covering search intent,
+                content opportunities and on-page improvements.
+              </p>
+
+              <a href="#lead-form" class="text-link">
+                Discuss a Similar Project <span aria-hidden="true">→</span>
+              </a>
+            </div>
+
+          </article>
+
+
+
+          <article class="work-card">
+
+            <div class="work-visual work-visual-two">
+              <div class="campaign-preview">
+                <span class="mini-label">CONCEPT PROJECT 02</span>
+                <div class="campaign-big">Reach the<br>Right People.</div>
+                <div class="campaign-button">Explore Campaign</div>
+                <div class="campaign-orb"></div>
+              </div>
+            </div>
+
+            <div class="work-card-content">
+              <div class="work-tags">
+                <span>Paid Media</span>
+                <span>Creative Strategy</span>
+              </div>
+
+              <h3>Paid Campaign Concept</h3>
+
+              <p>
+                A sample campaign direction demonstrating messaging,
+                audience alignment and creative consistency.
+              </p>
+
+              <a href="#lead-form" class="text-link">
+                Discuss a Similar Project <span aria-hidden="true">→</span>
+              </a>
+            </div>
+
+          </article>
+
+
+
+          <article class="work-card">
+
+            <div class="work-visual work-visual-three">
+              <div class="analytics-preview">
+                <span class="mini-label">CONCEPT PROJECT 03</span>
+
+                <div class="analytics-title">Marketing Overview</div>
+
+                <div class="analytics-metrics">
+                  <div><span>Traffic</span><b>—</b></div>
+                  <div><span>Leads</span><b>—</b></div>
+                </div>
+
+                <div class="analytics-bars">
+                  <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="work-card-content">
+              <div class="work-tags">
+                <span>Analytics</span>
+                <span>Reporting</span>
+              </div>
+
+              <h3>Performance Dashboard Concept</h3>
+
+              <p>
+                An illustrative dashboard concept for organizing
+                campaign metrics and monitoring marketing activity.
+              </p>
+
+              <a href="#lead-form" class="text-link">
+                Discuss a Similar Project <span aria-hidden="true">→</span>
+              </a>
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- OUR PROCESS -->
+    <section class="section process-section" id="process">
+
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="eyebrow">HOW WE WORK</span>
+
+          <h2>
+            A Clear Path From
+            <span class="text-blue">Plan to Progress.</span>
+          </h2>
+
+          <p>
+            A structured approach helps keep marketing activities
+            focused on the goals that matter.
+          </p>
+        </div>
+
+
+        <div class="process-grid">
+
+          <article class="process-card">
+            <span class="process-number">01</span>
+            <div class="process-icon" aria-hidden="true">⌕</div>
+            <h3>Discover</h3>
+            <p>
+              Understand your business, audience, challenges
+              and growth objectives.
+            </p>
+          </article>
+
+
+          <article class="process-card">
+            <span class="process-number">02</span>
+            <div class="process-icon" aria-hidden="true">◇</div>
+            <h3>Strategize</h3>
+            <p>
+              Identify relevant opportunities and prioritize
+              a suitable marketing approach.
+            </p>
+          </article>
+
+
+          <article class="process-card">
+            <span class="process-number">03</span>
+            <div class="process-icon" aria-hidden="true">↗</div>
+            <h3>Execute</h3>
+            <p>
+              Put the agreed campaigns, content and
+              marketing activities into action.
+            </p>
+          </article>
+
+
+          <article class="process-card">
+            <span class="process-number">04</span>
+            <div class="process-icon" aria-hidden="true">⌁</div>
+            <h3>Optimize</h3>
+            <p>
+              Review performance and identify opportunities
+              for ongoing improvement.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- FAQ -->
+    <section class="section faq-section" id="faq">
+
+      <div class="container faq-grid">
+
+        <div class="faq-intro">
+          <span class="eyebrow">GOT QUESTIONS?</span>
+
+          <h2>
+            Let's Clear
+            <span class="text-blue">Things Up.</span>
+          </h2>
+
+          <p>
+            Here are answers to some common questions
+            about working with a digital marketing agency.
+          </p>
+
+          <a href="#lead-form" class="text-link">
+            Have another question? Contact us <span aria-hidden="true">→</span>
+          </a>
+        </div>
+
+
+        <div class="faq-list">
+
+          <details class="faq-item">
+            <summary>What digital marketing services do you offer?</summary>
+            <p>
+              Our service offering covers SEO, paid advertising,
+              social media, email marketing, content marketing,
+              conversion optimization, automation and analytics.
+              The right combination depends on your goals.
+            </p>
+          </details>
+
+
+          <details class="faq-item">
+            <summary>How do you decide which strategy is right for my business?</summary>
+            <p>
+              A suitable strategy starts with understanding your
+              audience, business objectives, current marketing
+              activity and available resources.
+            </p>
+          </details>
+
+
+          <details class="faq-item">
+            <summary>How soon can I expect to see results?</summary>
+            <p>
+              Timelines depend on your industry, starting point,
+              chosen channels and campaign objectives. Some paid
+              campaigns provide early feedback, while organic
+              strategies often require sustained effort.
+            </p>
+          </details>
+
+
+          <details class="faq-item">
+            <summary>Do you work with small businesses and startups?</summary>
+            <p>
+              Our concept is designed around flexible marketing
+              solutions that can be adapted to different business
+              stages, priorities and budgets.
+            </p>
+          </details>
+
+
+          <details class="faq-item">
+            <summary>What happens after I submit the enquiry form?</summary>
+            <p>
+              Once the enquiry workflow is connected to a backend,
+              your details can be securely processed and a follow-up
+              can be arranged using your preferred contact method.
+            </p>
+          </details>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- FINAL CTA -->
+    <section class="final-cta section">
+
+      <div class="container">
+
+        <div class="final-cta-card">
+
+          <div class="cta-decoration cta-decoration-one"></div>
+          <div class="cta-decoration cta-decoration-two"></div>
+
+          <div class="final-cta-content">
+            <span class="eyebrow eyebrow-light">YOUR NEXT CHAPTER STARTS HERE</span>
+
+            <h2>Ready to Grow Your Business?</h2>
+
+            <p>
+              Let's build a marketing strategy that works for your goals.
+            </p>
+
+            <a href="#lead-form" class="button button-white">
+              Get Your Free Marketing Strategy
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer" id="privacy">
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+
+          <a href="#home" class="logo footer-logo">
+            <span class="logo-mark">G</span>
+            <span>growthora<span class="logo-dot">.</span></span>
+          </a>
+
+          <p>
+            Thoughtful digital marketing for businesses
+            ready to move forward.
+          </p>
+
+        </div>
+
+
+        <div class="footer-column">
+          <h3>Explore</h3>
+          <a href="#services">Services</a>
+          <a href="#about">Why Growthora</a>
+          <a href="#work">Our Work</a>
+          <a href="#process">Our Process</a>
+        </div>
+
+
+        <div class="footer-column">
+          <h3>Services</h3>
+          <a href="#services">SEO</a>
+          <a href="#services">Paid Advertising</a>
+          <a href="#services">Email Marketing</a>
+          <a href="#services">Analytics</a>
+        </div>
+
+
+        <div class="footer-column">
+          <h3>Get Started</h3>
+          <p>Tell us about your business goals.</p>
+          <a href="#lead-form" class="text-link">
+            Request a Strategy <span aria-hidden="true">→</span>
+          </a>
+        </div>
+
+      </div>
+
+
+      <div class="footer-bottom">
+
+        <p>
+          © <span id="current-year">2026</span> Growthora.
+          Portfolio concept project.
+        </p>
+
+        <div class="footer-legal">
+          <a href="#privacy">Privacy information</a>
+          <a href="#home">Back to top ↑</a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
